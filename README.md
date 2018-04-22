@@ -97,6 +97,7 @@ crontab -e
 ```
 2. Run liskpool.py normally to broadcast the payments
 
+```bash batch.sh```
 
 ## Command line usage
 
