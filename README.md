@@ -35,36 +35,17 @@ If you want to run a private pool, you need to edit config.json and:
 - private: set to true
 - whitelist: put a list of address you wish to include
 
-### Ark & Kapu
-If you are using this software on ark, you should edit pollogs_example_ark.json and put:
-
-- lastpayout: the unixtimestamp of your last payout or the date of pool starting 
-- lastforged: the forged amount recorded in your last payout or the forged amount of pool starting
-
-then move poollogs_example_ark.json to poollogs.json.
-
-Also, replace docs/index.html with docs/index.ark.html
-
 ## Running it
 
 First clone the lisk-pool repository and install requests:
 
-```git clone https://github.com/MxShift/lisk-pool```
+```git clone https://github.com/MxShift/shift-pool```
 
 ```cd lisk-pool```
 
 ```apt-get install python3-pip```
 
 ```pip3 install requests```
-
-If you are using lisk 1.0.0 or rise 1.0.0 you need to dpos-api-fallback:
-
-```bash
-git clone https://github.com/vekexasia/dpos-api-fallback
-cd dpos-api-fallback
-npm install
-npm run package
-```
 
 Then start it:
 
@@ -86,12 +67,12 @@ To display the pool frontend, enable docs-site on github repository settings.
 
 ## Batch mode
 
+There is also a 'batch.sh' file which run liskpool, then payments.sh and copy the poollogs.json
+in the docs folder.
+
 The script is also runnable by cron using the -y argument:
 
 `python3 liskpool.py -y`
-
-There is also a 'batch.sh' file which run liskpool, then payments.sh and copy the poollogs.json
-in the docs folder.
 
 
 ### Avoid vote hoppers
@@ -120,32 +101,6 @@ optional arguments:
   -y                    automatic yes for log saving (default: no)
   --min-payout MINPAYOUT
                         override the minpayout value from config file
-```
-
-## Lisk 1.0.0 and Rise 1.0.0 migration
-
-Since Lisk version 1.0.0 and Rise version 1.0.0, APIs with secret used for creating 
-transaction are not available anymore, so we need to use the dpos-api-fallback
-(a special thanks for vekexasia who made this tool). 
-
-First, update the lisk-pool source, then install dpos-api-fallback inside the lisk-pool
-directory:
-
-```bash
-cd lisk-pool
-git clone https://github.com/vekexasia/dpos-api-fallback
-cd dpos-api-fallback
-npm install
-npm run package
-```
-
-**nodejs >= 6 is mandatory for running dpos-api-fallback!**
-
-Since this version is not yet the default, you should edit liskpool.py and set
-the variable ENABLE_VERSION_1 to true:
-
-```python
-ENABLE_VERSION_1 = True
 ```
 
 ## License
