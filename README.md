@@ -55,6 +55,10 @@ or if you want to use another config file:
 
 ```python3 liskpool.py -c config2.json```
 
+The script is also runnable by cron using the -y argument:
+
+`python3 liskpool.py -y`
+
 It produces a file "payments.sh" with all payments shell commands. Run this file with:
 
 ```bash payments.sh```
@@ -62,18 +66,21 @@ It produces a file "payments.sh" with all payments shell commands. Run this file
 The payments will be broadcasted (every 10 seconds). At the end you can move your generated
 poollogs.json to docs/poollogs.json and send the update to your git repo.
 
+```
+git add docs/poollogs.json
+git commit -m "payouts update"
+git push -u -f origin master
+```
+
 To display the pool frontend, enable docs-site on github repository settings.
 
 
 ## Batch mode
 
-There is also a 'batch.sh' file which run liskpool, then payments.sh and copy the poollogs.json
-in the docs folder.
+**There is also a 'batch.sh' file which run liskpool, then payments.sh and copy the poollogs.json
+in the docs folder.**
 
-The script is also runnable by cron using the -y argument:
-
-`python3 liskpool.py -y`
-
+```bash batch.sh```
 
 ### Avoid vote hoppers
 
