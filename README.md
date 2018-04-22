@@ -69,7 +69,7 @@ poollogs.json to docs/poollogs.json and send the update to your git repo.
 ```
 git add docs/poollogs.json
 git commit -m "payouts update"
-git push -u -f origin master
+git push -u origin master
 ```
 
 To display the pool frontend, enable docs-site on github repository settings.
