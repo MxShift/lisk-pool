@@ -1,4 +1,4 @@
-# Lisk pool distribution software
+# Shift pool distribution software
 This software is created by lisk delegate "dakk", please consider a small donation if you
 use this software: 
 - "2324852447570841050L" for lisk
