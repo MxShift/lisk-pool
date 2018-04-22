@@ -71,6 +71,10 @@ git add docs/poollogs.json
 git commit -m "payouts update"
 git push -u origin master
 ```
+or
+```
+bash site-update.sh
+```
 
 To display the pool frontend, enable docs-site on github repository settings.
 
