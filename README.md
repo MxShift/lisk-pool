@@ -37,7 +37,7 @@ If you want to run a private pool, you need to edit config.json and:
 
 ## Running it
 
-First clone the lisk-pool repository and install requests:
+First clone the shift-pool repository and install requests:
 
 ```git clone https://github.com/MxShift/shift-pool```
 
