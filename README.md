@@ -80,7 +80,7 @@ To display the pool frontend, enable docs-site on github repository settings.
 
 ## Batch mode
 
-**There is also a 'batch.sh' file which run liskpool, then payments.sh and copy the poollogs.json
+**There is also a 'run.sh' file which run liskpool, then payments.sh and copy the poollogs.json
 in the docs folder.**
 
 ```bash run.sh```
