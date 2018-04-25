@@ -26,8 +26,8 @@ Fork this repo; edit config.json and modify the first lines with your settings:
 
 Now edit docs/index.html and customize the webpage.
 
-Finally edit poollogs_example.json and put in lastpayout the unixtimestamp of your last payout or the
-date of pool starting; then move poollogs_example.json to poollogs.json.
+Finally edit poollogs.json and put in lastpayout the unixtimestamp of your last payout or the
+date of pool starting;
 
 ### Private pool
 If you want to run a private pool, you need to edit config.json and:
@@ -83,7 +83,7 @@ To display the pool frontend, enable docs-site on github repository settings.
 **There is also a 'batch.sh' file which run liskpool, then payments.sh and copy the poollogs.json
 in the docs folder.**
 
-```bash batch.sh```
+```bash run.sh```
 
 ### Avoid vote hoppers
 
@@ -97,7 +97,7 @@ crontab -e
 ```
 2. Run liskpool.py normally to broadcast the payments
 
-```bash batch.sh```
+```bash run.sh```
 
 ## Command line usage
 
