@@ -10,19 +10,21 @@ use this software:
 ## Configuration
 Fork this repo; edit config.json and modify the first lines with your settings:
 
-- pubkey: your delegate pubkey
-- percentage: percentage to distribute
-- secret: your secret
-- secondsecret: your second secret or null if disabled
+- coin: the name of the coin (LISK, ARK, SHIFT, RISE, or whatever you want)
 - node: the lisk node where you get forging info
 - nodepay: the lisk node used for payments
+- pubkey: your delegate pubkey
+- percentage: percentage to distribute
+- logfile: file where you want to write pending and sent amounts
 - minpayout: the minimum amount for a payout
-- coin: the name of the coin (LISK, ARK, SHIFT, RISE, or whatever you want)
-- skip: a list of address to skip
+- secret: your secret
+- secondsecret: your second secret or null if disabled
+- feededuct: true if you want to subtract fees from user payouts
 - donations: a list of object (address: amount) for send static amount every payout
 - donationspercentage: a list of object (address: percentage) for send static percentage every payout
-- logfile: file where you want to write pending and sent amounts
-- feededuct: true if you want to subtract fees from user payouts
+- skip: a list of address to skip
+- private: set to true for private pool
+- whitelist: put a list of address you wish to include in private pool
 
 Now edit docs/index.html and customize the webpage.
 
