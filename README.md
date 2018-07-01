@@ -8,7 +8,7 @@ use this software:
 
 
 ## Configuration
-Fork this repo; edit config.json and modify the first lines with your settings:
+Fork this repo; Rename `config.example.json` file to `config.json` then edit and modify the first lines with your settings:
 
 - coin: the name of the coin (LISK, ARK, SHIFT, RISE, or whatever you want)
 - node: the lisk node where you get forging info
