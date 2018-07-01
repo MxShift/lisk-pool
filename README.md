@@ -41,13 +41,15 @@ If you want to run a private pool, you need to edit config.json and:
 
 First clone the shift-pool repository and install requests:
 
-```git clone https://github.com/MxShift/shift-pool```
+```git clone https://github.com/MxShift/shift-pool.git```
 
 ```cd shift-pool```
 
-```apt-get install python3-pip```
+```sudo apt-get install python3```
 
-```pip3 install requests```
+```sudo apt-get install python3-pip```
+
+```sudo pip3 install requests```
 
 Then start it:
 
