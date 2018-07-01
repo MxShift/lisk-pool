@@ -95,7 +95,7 @@ receiving payout from multiple pools. A solution for that is the following flow:
 1. Run liskpool.py every hour with --min-payout=1000000 (a very high minpayout, so no payouts will be done but the pending will be updated)
 ```
 crontab -e
-@hourly cd shift-pool && python3 liskpool.py -y --min-payout=1000000
+@hourly python3 ~/shift-pool/liskpool.py -y --min-payout=1000000
 ```
 2. Run liskpool.py normally to broadcast the payments
 
